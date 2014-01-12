@@ -3,19 +3,30 @@
 <html>
     <head>
         <link href="{% static "css/foundation.min.css" %}" rel="stylesheet" type="text/css" />
+        <link href="{% static "css/blog.css" %}" rel="stylesheet" type="text/css" />
+        <script language="javascript" type="text/javascript" src="{% static "js/processing-1.4.1.min.js" %}"></script>
     </head>
     <body>
-        <div id="sidebar">
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/fuel">Fuel</a></li>
-            </ul>
-        </div>
 		<div id="container" class="container">
-		  <div class="row">
-		    <div class="small-9 small-centered columns">
-            {% block content %}{% endblock %}
-		    </div>
-		  </div>
+            <div class="row">
+                <div class="small-5 small-centered columns">
+                    {% include "home/_header.html" %}
+                </div>
+            </div>
+            <div class="row">
+                <div class="large-3 medium-4 columns">
+                    <div id="sidebar"> 
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/fuel">Fuel</a></li>
+                            <li><a href="/moire">Moire</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="large-9 medium-8 columns">
+                    {% block content %}{% endblock %}
+                </div>
+            </div>
+        </div>
     </body>
 </html>

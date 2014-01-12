@@ -1,0 +1,14 @@
+
+{% extends "base.html"%}
+
+{% load staticfiles %}
+
+{% block content %}
+    <h2>
+    Effet de Moire
+    </h2>
+    <p>D'une manière générale, le moiré est une figure composée de lignes sombres et claires résultant de la superposition de deux grilles.</p>
+    <canvas height="400" width="400" data-processing-sources="{% static "pde/moire1/moire1.pde" %}" id="moire1" tabindex="0">
+        <p>Your browser does not support the canvas tag.</p>
+    </canvas> 
+{% endblock %}

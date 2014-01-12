@@ -1,7 +1,12 @@
 {% extends "base.html"%}
 
+{% load staticfiles %}
+
 {% block content %}
-    <div>
+    <h2>
     demo de Fuel
+    </h2>
+    <div>
+        <canvas src="{% static "pde/fuel.pde" %}"></canvas>
     </div>
 {% endblock %}

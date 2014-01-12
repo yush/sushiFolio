@@ -8,8 +8,9 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    url(r'^$', 'views.home', name='home'),
+    url(r'^$', 'p55folio.views.home', name='home'),
     url(r'^fuel', 'p55folio.views.fuel', name='fuel'),
+    url(r'^moire', 'p55folio.views.moire', name='moire'),
     # url(r'^$', 'openshift.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     
