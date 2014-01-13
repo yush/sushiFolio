@@ -8,3 +8,6 @@ def fuel(request):
 
 def moire(request):
     return render_to_response('home/moire.html')
+
+def fractal(request):
+    return render_to_response('home/fractal.html')

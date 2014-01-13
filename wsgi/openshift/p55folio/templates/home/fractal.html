@@ -1,0 +1,14 @@
+{% extends "base.html"%}
+
+{% load staticfiles %}
+
+{% block content %}
+    <h2>
+        Fractales
+    </h2>
+    <p>Quelques exemples d'images fractales simple</p>
+    <canvas height="400" width="400" data-processing-sources="{% static "pde/fractalEscalier.pde" %}" id="moire1" tabindex="0">
+        <p>Your browser does not support the canvas tag.</p>
+    </canvas> 
+    <p>Escalier</p>
+{% endblock %}
